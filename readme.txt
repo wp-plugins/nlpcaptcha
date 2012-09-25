@@ -4,14 +4,24 @@ Tags: comments, registration, nlpcaptcha, antispam, mailhide, captcha
 Requires at least: 2.7
 Tested up to: 2.9.1
 Stable tag: 3.1.6
-
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Integrates NLPCaptcha anti-spam methods with WordPress including comment, registration, and email spam protection.
 
 == Description ==
 
 = What is NLPCaptcha? =
 
-[NLPCaptcha](http://nlpcaptcha.in/ "NLPCaptcha") is an anti-spam method
+[NLPCaptcha](http://nlpcaptcha.in/ "NLPCaptcha")
+NLPCaptcha is the pioneer of Captcha advertising and it converts your security tool into revenue generating Ad platform. Like traditional Captcha, it helps you keep your site secure against spamming but at the same time it provides a better experience for the end user and helps the publishers increase their revenues without any additional cost. 
+
+Advantages
+o	Provides better and more advanced security tool based on our patent pending Natural Language processing technology which makes website 100% secure and impossible to breach
+o	Creates a new premium inventory on the website and generates a completely new stream of revenues 
+o	You are paid every time a captcha is filled in your website
+o	Better user experience
+o	Real time tracking of earnings and performance 
+
 
 == Installation ==
 
@@ -23,7 +33,7 @@ To install in regular WordPress and [WordPress MultiSite](http://codex.wordpress
 
 == Requirements ==
 
-* You need the NLPCaptcha API keys [here](http://nlpcaptcha.in/index.php/login "NLPCaptcha API keys") 
+* You will need an NLPCaptcha Account and corresponding API keys from [here](http://nlpcaptcha.in/index.php/login "NLPCaptcha API keys") 
 
 == ChangeLog ==
 
