@@ -1,0 +1,27 @@
+/* RECAPTCHA STYLING */
+.nlpcaptcha-error {
+   font-size: 1.8em;
+   padding-bottom: 8px;
+}
+/* END RECAPTCHA STYLING */
+
+
+/* ADMINISTRATION SETTINGS RECAPTCHA */
+.nlpcaptcha-form {
+   margin: auto !important;
+   width: 25em !important;
+}
+
+.nlpcaptcha-options td {
+   vertical-align: top !important;
+}
+
+.which-key label {
+   font-weight: bold;
+}
+
+.copyright {
+   text-align: center;
+   font-size: .85em;
+}
+/* END ADMINISTRATION SETTINGS RECAPTCHA */
