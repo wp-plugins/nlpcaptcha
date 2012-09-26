@@ -196,7 +196,7 @@ REGISTRATION;
         }
         
         function create_error_notice($message, $anchor = '') {
-            $options_url = admin_url('options-general.php?page=wp-nlpcaptcha/nlpcaptcha.php') . $anchor;
+            $options_url = admin_url('options-general.php?page=nlpcaptcha/nlpcaptcha.php') . $anchor;
             $error_message = sprintf(__($message . ' <a href="%s" title="NLPCaptcha Options">Fix this</a>', 'nlpcaptcha'), $options_url);
             
             echo '<div class="error"><p><strong>' . $error_message . '</strong></p></div>';
@@ -486,7 +486,7 @@ JS;
             if ($file == plugin_basename($this->path_to_plugin_directory() . '/wp-nlpcaptcha.php')) {
                $settings_title = __('Settings for this Plugin', 'nlpcaptcha');
                $settings = __('Settings', 'nlpcaptcha');
-               $settings_link = '<a href="options-general.php?page=wp-nlpcaptcha/nlpcaptcha.php" title="' . $settings_title . '">' . $settings . '</a>';
+               $settings_link = '<a href="options-general.php?page=nlpcaptcha/nlpcaptcha.php" title="' . $settings_title . '">' . $settings . '</a>';
                array_unshift($links, $settings_link);
             }
             
