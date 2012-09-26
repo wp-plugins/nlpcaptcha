@@ -197,7 +197,7 @@ REGISTRATION;
         
         function create_error_notice($message, $anchor = '') {
             $options_url = admin_url('options-general.php?page=wp-nlpcaptcha/nlpcaptcha.php') . $anchor;
-            $error_message = sprintf(__($message . ' <a href="%s" title="WP-NLPCaptcha Options">Fix this</a>', 'nlpcaptcha'), $options_url);
+            $error_message = sprintf(__($message . ' <a href="%s" title="NLPCaptcha Options">Fix this</a>', 'nlpcaptcha'), $options_url);
             
             echo '<div class="error"><p><strong>' . $error_message . '</strong></p></div>';
         }
@@ -497,14 +497,10 @@ JS;
         function add_settings_page() {
             // add the options page
             if ($this->environment == Environment::WordPressMU && $this->is_authority())
-                add_submenu_page('wpmu-admin.php', 'WP-NLPCaptcha', 'WP-NLPCaptcha', 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
+                add_submenu_page('wpmu-admin.php', 'NLPCaptcha', 'NLPCaptcha', 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
 
-            /*  re-add when we figure out a way to add network-wide settings in ms
-            if ($this->environment == Environment::WordPressMS && $this->is_authority())
-                add_submenu_page('ms-admin.php', 'WP-NLPCaptcha', 'WP-NLPCaptcha', 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
-             */
-            
-            add_options_page('WP-NLPCaptcha', 'WP-NLPCaptcha', 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
+           
+            add_options_page('NLPCaptcha', 'NLPCaptcha', 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
         }
         
         // store the xhtml in a separate file and use include on it
@@ -537,35 +533,7 @@ JS;
             
             $this->build_dropdown('nlpcaptcha_options[minimum_bypass_level]', $capabilities, $this->options['minimum_bypass_level']);
         }
-       /* 
-        function theme_dropdown($which) {
-            $themes = array (
-                __('Red', 'nlpcaptcha') => 'red',
-                __('White', 'nlpcaptcha') => 'white',
-                __('Black Glass', 'nlpcaptcha') => 'blackglass',
-                __('Clean', 'nlpcaptcha') => 'clean'
-            );
-            
-            if ($which == 'comments')
-                $this->build_dropdown('nlpcaptcha_options[comments_theme]', $themes, $this->options['comments_theme']);
-            else if ($which == 'registration')
-                $this->build_dropdown('nlpcaptcha_options[registration_theme]', $themes, $this->options['registration_theme']);
-        }*/
-        /*
-        function nlpcaptcha_language_dropdown() {
-            $languages = array (
-                __('English', 'nlpcaptcha') => 'en',
-                __('Dutch', 'nlpcaptcha') => 'nl',
-                __('French', 'nlpcaptcha') => 'fr',
-                __('German', 'nlpcaptcha') => 'de',
-                __('Portuguese', 'nlpcaptcha') => 'pt',
-                __('Russian', 'nlpcaptcha') => 'ru',
-                __('Spanish', 'nlpcaptcha') => 'es',
-                __('Turkish', 'nlpcaptcha') => 'tr'
-            );
-            
-            $this->build_dropdown('nlpcaptcha_options[nlpcaptcha_language]', $languages, $this->options['nlpcaptcha_language']);
-        }*/
+    
     } // end class declaration
 } // end of class exists clause
 

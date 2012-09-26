@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: NLPCaptcha
-Tags: comments, registration, nlpcaptcha, antispam, mailhide, captcha
+Tags: comments, registration, nlpcaptcha, antispam, captcha
 Requires at least: 2.7
 Tested up to: 2.9.1
 Stable tag: 3.1.6
@@ -12,15 +12,14 @@ Integrates NLPCaptcha anti-spam methods with WordPress including comment, regist
 
 = What is NLPCaptcha? =
 
-[NLPCaptcha](http://nlpcaptcha.in/ "NLPCaptcha")
-NLPCaptcha is the pioneer of Captcha advertising and it converts your security tool into revenue generating Ad platform. Like traditional Captcha, it helps you keep your site secure against spamming but at the same time it provides a better experience for the end user and helps the publishers increase their revenues without any additional cost. 
+[NLPCaptcha](http://nlpcaptcha.in/ "NLPCaptcha") is the pioneer of Captcha advertising and it converts your security tool into revenue generating Ad platform. Like traditional Captcha, it helps you keep your site secure against spamming but at the same time it provides a better experience for the end user and helps the publishers increase their revenues without any additional cost. 
 
 Advantages
-o	Provides better and more advanced security tool based on our patent pending Natural Language processing technology which makes website 100% secure and impossible to breach
-o	Creates a new premium inventory on the website and generates a completely new stream of revenues 
-o	You are paid every time a captcha is filled in your website
-o	Better user experience
-o	Real time tracking of earnings and performance 
+*	Provides better and more advanced security tool based on our patent pending Natural Language processing technology which makes website 100% secure and impossible to breach
+*	Creates a new premium inventory on the website and generates a completely new stream of revenues 
+*	You are paid every time a captcha is filled in your website
+*	Better user experience
+*	Real time tracking of earnings and performance 
 
 
 == Installation ==

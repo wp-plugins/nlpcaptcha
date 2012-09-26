@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: WP-NLPCaptcha
-Plugin URI: http://www.nlpcaptcha.in/integration/wordpress
+Plugin Name: NLPCaptcha
+Plugin URI: http://www.nlpcaptcha.in/index.php/login
 Description: Integrates NLPCaptcha anti-spam solutions with wordpress
-Version: 1.1
+Version: 1.11
 Author: NLPCaptcha
-Email: integrationsupport@nlpcaptcha.com
+Email: support@nlpcaptcha.com
 Author URI: http://www.nlpcaptcha.in
 */
 /* This code is based on code from,
@@ -40,9 +40,7 @@ Author URI: http://www.nlpcaptcha.in
 define('ALLOW_INCLUDE', true);
 
 require_once('nlpcaptcha.php');
-//require_once('mailhide.php');
 
 $nlpcaptcha = new NLPCaptcha('nlpcaptcha_options');
-//$mailhide = new MailHide('mailhide_options');
 
 ?>
