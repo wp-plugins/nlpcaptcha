@@ -3,7 +3,7 @@
 Plugin Name: NLPCaptcha
 Plugin URI: http://www.nlpcaptcha.in/index.php/login
 Description: Integrates NLPCaptcha anti-spam solutions with wordpress
-Version: 1.12
+Version: 4.2.3
 Author: NLPCaptcha
 Email: support@nlpcaptcha.com
 Author URI: http://www.nlpcaptcha.in
